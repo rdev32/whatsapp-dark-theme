@@ -1,0 +1,21 @@
+{
+    "manifest_version" : 2,
+    "name": "WhatsApp Web Dark Theme",
+    "version": "4",
+    "description": "Turns off the light bulb",
+    "content_security_policy": "default-src 'self'",
+    "author": "rDevelops Inc",
+    "icons" : {
+        "128" : "res/ico128.png"
+    },
+    "homepage_url": "https://github.com/ramm32/WhatsApp-Dark-Mode/",
+    "content_scripts" : [
+        {
+            "matches" : ["https://web.whatsapp.com/"],
+            "js" : ["src/content.js"]
+        }
+    ],
+    "permissions": [
+        "https://web.whatsapp.com/*"
+    ]
+}
